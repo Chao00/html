@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html行内与块级元素</title>
+</head>
+
+<body>
+    <!-- html行内元素 -->
+    normal link:<a href="https://www.baidu.com/">百度一下</a>
+    <br> photo link:
+    <a href="https://www.baidu.com/" target="_blank"><img src="bd_logo1.png"></a>
+    <br> E-mail link: <a href="mailto:nickzhang0608@gmail.com">e-mail chao</a>
+    <!-- 定义换行 -->
+    <br>
+    <!-- photo -->
+    <img src="D:/photo 2015/IMG_1028.JPG" width="290px" height="200px">
+    <!-- 文档中的内联元素 -->
+    <span>happy family</span>
+    <!-- 文本格式化标签 -->
+    <br>
+    <b>加粗文本</b>
+    <i>斜体文本</i>
+    <em>强调文本</em>
+    <strong>more important</strong>
+    <br>
+    <sub>下标</sub><sup>上标</sup>
+    <del>删除的文本</del>
+    <small>更小</small>
+    <ins>插入的文本</ins>
+    <!-- 表单元素 -->
+    <form action="reveive.php" method="get">
+        My name:
+        <input type="text" name="name"> 密码:
+        <input type="password" name="pin"> 提交:
+        <input type="submit" name="sub">
+        <br> 单选:
+        <input type="radio" name="sex" value="male">boy
+        <input type="radio" name="sex" value="female">girl 多选:
+        <input type="checkbox" name="name">I'm Chao
+        <input type="checkbox" name="name">I'm Nick
+        <input type="checkbox" name="name">I'm Cha
+        <br> 文本域:
+        <textarea rows="10" cols="30">呜呜呜呜我问问</textarea>
+        选项列表:
+        <select>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="js">js</option>
+            <option value="html">html</option>
+        </select>
+    </form>
+    <!-- 块级元素 -->
+    <div>文档中的块级元素，本身没有什么语义</div>
+    <div>文档中的块级元素，本身没有什么语义</div>
+    <!-- 标题：h1-h6 -->
+    <h1>标题</h1>
+    <!-- 段落 -->
+    <p>这是一段文本</p>
+    <p>这是一段文本</p>
+    <hr>
+    <p>这是一段文本</p>
+    <!-- 分割线 -->
+    <hr>
+    <!-- 有序列表 -->
+    <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>js</li>
+    </ol>
+    <!-- 无序列表 -->
+    <ul>
+        <li>java</li>
+        <li>js</li>
+        <li>ss</li>
+        <li>aaa</li>
+    </ul>
+    <!-- 自定义列表 -->
+    <dl>
+        <dt>小红</dt>
+        <dd>可爱的小红</dd>
+        <dt>小兰</dt>
+        <dd>顽皮的小兰</dd>
+        <dt>小紫</dt>
+        <dd>红得发黑的小紫</dd>
+    </dl>
+    <!-- table表格标签 -->
+    <table border="1">
+        <caption>课程表</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Morning</td>
+                <td>1</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+            </tr>
+            <tr>
+                <td colspan="7">Rest</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Afternoon</td>
+                <td>3</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+                <td>Chinese</td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
+    <!-- 嵌套 -->
+    <iframe src="http://www.baidu.com" width="500" height="300">
+    </iframe>
+    <form>
+    	favourite color:<input type="color" name="favourite">
+    	Time:<input type="datetime" name="s">
+    	Birthday: <input type="date" name="Birthday">
+    	E-mail: <input type="email" name="e">
+    	<input type="submit" name="jiao">
+    </form>
+</body>
+
+</html>
